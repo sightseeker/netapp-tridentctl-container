@@ -10,7 +10,7 @@ So, `tridentctl` running on Docker to workalound to this issue.
 
 ## Usage of `tridentctl for docker`
 
-```
+```bash
 # Show tridentctl version
 docker run -it --rm -v ${KUBECONFIG}:/root/.kube -v ${PWD}:/opt/trident sightseeker/tridentctl} version
 
@@ -25,7 +25,7 @@ docker run -it --rm -v ${KUBECONFIG}:/root/.kube -v ${PWD}:/opt/trident sightsee
 
 Alias config to your `.bash_profile` for `tridentctl for docker` use without docker-cli use.
 
-```
+```bash
 alias tridentctl="docker run -it --rm -v ${HOME}/.kube:/root/.kube -v ${PWD}:/opt/trident sightseeker/tridentctl"
 
 # reload bash_profile
