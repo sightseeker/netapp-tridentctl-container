@@ -12,10 +12,10 @@ So, `tridentctl` running on Docker to workalound to this issue.
 
 ```bash
 # Show tridentctl version
-docker run -it --rm -v ${KUBECONFIG}:/root/.kube -v ${PWD}:/opt/trident sightseeker/tridentctl} version
+docker run -it --rm -v ${KUBECONFIG}:/root/.kube -v ${PWD}:/opt/trident sightseeker/tridentctl version
 
 # Show usage of tridentctl (help)
-docker run -it --rm -v ${KUBECONFIG}:/root/.kube -v ${PWD}:/opt/trident sightseeker/tridentctl} --help
+docker run -it --rm -v ${KUBECONFIG}:/root/.kube -v ${PWD}:/opt/trident sightseeker/tridentctl --help
 
 # Show backends
 docker run -it --rm -v ${KUBECONFIG}:/root/.kube -v ${PWD}:/opt/trident sightseeker/tridentctl get backend
