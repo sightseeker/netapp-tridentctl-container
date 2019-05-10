@@ -5,3 +5,5 @@ services:
     image: sightseeker/tridentctl
     volumes:
       - ${HOME}/.kube:/root/.kube
+      - ${PWD}:/opt/tridentctl
+
